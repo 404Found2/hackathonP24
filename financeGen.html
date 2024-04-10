@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankable: myBankable </title>
+    <link href="common.css" rel="stylesheet" type="text/css" />
+    <link href="css/generator.css" rel="stylesheet" type="text/css" />
+
+    <script src="common.js" defer></script>
+    <script src="js/generator.js" defer></script>
+
+</head>
+
+<script src="https://kit.fontawesome.com/8dc5063b50.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="nav">
+        <div class="logo">
+            <h1 class="gradient">Bankable</h1>
+            <p>Finance Your Future</p>
+        </div>
+        <a class="red-link" href="php/redirect.php">My Account</a> <br>
+        <a class="purple-link" href="feed.html">My Feed</a> <br>
+        <a class="blue-link  selected" href="financeGen.html">Finance Generator</a> <br>
+        <a class="green-link" href="opportunities.html">Explore Opportunities </a> <br>
+    </div>
+
+    <div id="body">
+        <div class="data">
+            <div class="bubble blue">
+                <h3>Income</h3>
+                <div id="income-source">
+                    <table id="income-data">
+                        <thead>
+                            <tr>
+                                <th> Name </th>
+                                <th> Initial <br> Value </th>
+                                <th> Monthly <br> Contribution </th>
+                                <th> Yearly <br>Growth Rate </th>
+                            </tr>
+                        </thead>
+                        <tbody id="income-datas">
+
+                        </tbody>
+                    </table>
+                </div>
+                <button id="addIncome">+ Add</button>
+                <button id="deleteIncome">- Delete</button>
+            </div>
+            <div class="bubble red">
+                <h3>Expenses</h3>
+                <div id="expense-source">
+                    <table id="expense-data">
+                        <thead>
+                            <tr>
+                                <th> Name </th>
+                                <th>Cost <br>(if One time fee)</th>
+                                <th> Cost <br> per Year</th>
+                                <th> Yearly <br> Depreciation Rate </th>
+                                <th> If Depreciable: <br> Current Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expense-datas">
+
+                        </tbody>
+                    </table>
+                    <button id="addExpense">+ Add</button>
+                    <button id="deleteExpense">- Delete</button>
+                </div>
+            </div>
+            <div class="bubble green">
+                <h3>Goal Information</h3>
+                <div id="goal-source">
+                    <table id="goal-data">
+                        <tr>
+                            <th> Start Year</th>
+                            <td> <input id="startyr" type="number" min="1950" class="fill"
+                                    placeholder="Enter Start Year">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th> End Year</th>
+                            <td> <input id="endyr" class="fill" type="number" min="2024" placeholder="Enter Enter Year">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th> Goal Amount</th>
+                            <td> <input class="fill" id="goal-money" type="number" min="0"
+                                    placeholder="Enter Goal Amount">
+                            </td>
+                        </tr>
+                    </table>
+                    <button id="createChart">Generate Chart</button>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <canvas class="graph" id="myGraph"></canvas>
+    </div>
+    <div id="sidenote">
+        <div class="bubble">
+            <h3>Make Changes</h3>
+            <div id="debugger"></div>
+            <div id="eventForm1" class="event-form">
+                <h4>New Money Source</h4>
+                <input placeholder="Name" type="text" id="name-1">
+                <input placeholder="Initial Value (USD)" type="number" step="0.01" min=0 id="initial-1">
+                <input placeholder="Monthly Contribution (USD)" type="number" step="0.01" min=0 id="monthly-1">
+                <input placeholder="Monthly Growth Rate (%)" type="number" step="0.01" min=0 id="growth-1">
+                <button id="confirm-add-income">Add Source</button>
+            </div>
+            <div id="eventForm1.1" class="event-form">
+                <h4>Delete Income Source</h4>
+                <input placeholder="Name" type="text" id="name-1">
+                <input placeholder="Row Number" type="number" step="1" min=1 id="rowNum-1.1">
+                <button id="confirm-delete-income">Delete Income Source</button>
+            </div>
+            <div id="eventForm2" class="event-form">
+                <h4>New Expense</h4>
+                <input placeholder="Name" type="text" id="name-2">
+                <input placeholder="Initial Value (USD)" type="number" step="0.01" min=0 id="initial-2">
+                <input placeholder="Yearly Cost (USD)" type="number" step="0.01" min=0 id="monthly-2">
+                <input placeholder="Monthly Depreciation Rate (%)" type="number" step="0.01" min=0 id="growth-2">
+                <input placeholder="Original Value(%)" type="number" step="0.01" min=0 id="value-2">
+                <button id="confirm-add-expense">Add Expense</button>
+            </div>
+            <div id="eventForm2.1" class="event-form">
+                <h4>Delete Expense</h4>
+                <input placeholder="Name" type="text" id="name-2.1">
+                <input placeholder="Row Number" type="number" step="1" min=1 id="rowNum-2.1">
+                <button id="confirm-delete-expense">Delete Expense</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

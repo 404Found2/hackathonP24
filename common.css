@@ -1,0 +1,156 @@
+:root {
+    --grey: #444444;
+    --red: #DC143C;
+    --dark-red: #ad1714;
+    --middle-color: #ad49c6;
+    --blue: #0075e0;
+    --dark-blue: #6edada;
+    --green: #288653;
+    --dark-green: #7accb8;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "arial", sans-serif;
+}
+
+i {
+    overflow: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    overflow: hidden;
+}
+
+#nav {
+    width: 200px;
+    height: 100vh;
+}
+
+#nav a {
+    display: block;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+#body {
+    width: calc(100vw - 450px);
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: var(--grey) transparent;
+    scrollbar-width: thin;
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+}
+
+#sidenote {
+    width: 250px;
+    height: 100vh;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+body div {
+    padding: 10px;
+}
+
+p {
+    color: var(--grey);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gradient {
+    background: -webkit-linear-gradient(0deg, var(--red), var(--middle-color), var(--blue), var(--green)) !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text !important;
+    background-clip: text;
+
+}
+
+.red-link:hover,
+.red-link.selected {
+    color: white !important;
+    background: var(--red);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.purple-link:hover,
+.purple-link.selected {
+    color: white !important;
+    background: var(--middle-color);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.blue-link:hover,
+.blue-link.selected {
+    color: white !important;
+    background: var(--blue);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.green-link:hover,
+.green-link.selected {
+    color: white !important;
+    background: var(--green);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+body h2 {
+    margin-top: 29px;
+    text-align: center;
+}
+
+#body p,
+#sidenote p {
+    margin-top: 15px;
+}
+
+
+h:first-of-type {
+    margin-top: 10px;
+}
+
+h,
+#sidenote a {
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+h.blue-link.selected:hover,
+#sidenote a.blue-link.selected:hover {
+    border: 2px solid var(--blue) !important;
+    background: white;
+    color: var(--blue) !important;
+}
+
+h.green-link.selected:hover,
+#sidenote a.green-link.selected:hover {
+    border: 2px solid var(--green) !important;
+    background: white;
+    color: var(--green) !important;
+}
