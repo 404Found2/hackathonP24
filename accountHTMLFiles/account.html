@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankable: myBankable </title>
+    <link href="../common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/account.css" rel="stylesheet" type="text/css" />
+
+    <script src="../common.js" defer></script>
+
+</head>
+
+<script src="https://kit.fontawesome.com/8dc5063b50.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="nav">
+        <div class="logo">
+            <h1 class="gradient">Bankable</h1>
+            <p>Finance Your Future</p>
+        </div>
+        <a class="red-link selected" href="../php/redirect.php">My Account</a> <br>
+        <a class="purple-link" href="../feed.html">My Feed</a> <br>
+        <a class="blue-link" href="../financeGen.html">Finance Generator</a> <br>
+        <a class="green-link" href="../opportunities.html">Explore Opportunities </a> <br>
+    </div>
+
+    <div id="body">
+        <form action="../php/signin.php" method="POST">
+            <div><i class="fa-regular fa-user"></i></div>
+            <actual>
+                <input type="text" id="username" placeholder="Username" name="username" required>
+                <input placeholder="Password" id="password" name="password" type="password" required>
+
+                <input type="checkbox" id="remember" checked><label for="remember"> Remember Me</label>
+                <br>
+                <button id="logon">Login</button>
+                <error id="error-code"></error>
+            </actual>
+        </form>
+    </div>
+    <div id="sidenote">
+        <h2 class="gradient">Need Help?</h2>
+        <a class="blue-link selected" href="../accountHTMLFiles/account-signUp.html">Create New Account</a> <br>
+        <a class="green-link selected" id="forgot">Forgot your username or password?</a> <br>
+    </div>
+</body>
+
+</html>

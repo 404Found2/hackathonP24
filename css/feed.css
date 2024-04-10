@@ -1,0 +1,122 @@
+img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    min-height: 150px;
+    aspect-ratio: 4/1;
+    object-fit: cover;
+}
+
+.post {
+    max-width: 700px;
+    width: 80%;
+    min-width: 400px;
+    margin: auto;
+    padding: 0px;
+    box-shadow: 10px 15px 25px #666;
+    border-radius: 22px;
+    margin-top: 40px;
+}
+
+.fa-heart.selected,
+.fa-heart:hover {
+    color: red;
+}
+
+.fa-thumbs-down.selected,
+.fa-thumbs-down:hover {
+    color: orange;
+}
+
+.fa-thumbs-up.selected,
+.fa-thumbs-up:hover {
+    color: blue;
+}
+
+.fa-thumbs-up,
+.fa-thumbs-down {
+    font-size: 26px !important;
+}
+
+.fa-solid {
+    font-size: 24px;
+    margin: 5px;
+    color: #333;
+}
+
+.preference {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+
+.text {
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background: teal;
+}
+
+.Stocks {
+    background: blue;
+}
+
+.Royalties {
+    background: red;
+}
+
+.Investing {
+    background: green;
+}
+
+.Real-Estate {
+    background: purple;
+}
+
+.Small-Business,
+.Business {
+    background: darkorange;
+}
+
+.General {
+    background: grey;
+}
+
+.Bonds {
+    background: brown;
+}
+
+.Amateur {
+    background: palevioletred;
+}
+
+.Intermediate {
+    background: goldenrod;
+}
+
+.Advanced {
+    background: black;
+}
+
+.hanging {
+    margin-left: 30px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankable: myBankable </title>
+    <link href="../common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/signedIn.css" rel="stylesheet" type="text/css" />
+
+    <script src="../common.js" defer></script>
+    <script src="../js/signedIn.js" defer></script>
+
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/8dc5063b50.js" crossorigin="anonymous"></script>
+<!--onload="updateDatas()"-->
+
+<body onload="updateDatas()">
+    <div id="nav">
+        <div class="logo">
+            <h1 class="gradient">Bankable</h1>
+            <p>Finance Your Future</p>
+        </div>
+        <a class="red-link selected" href="../php/redirect.php">My Account</a> <br>
+        <a class="purple-link" href="../feed.html">My Feed</a> <br>
+        <a class="blue-link" href="../financeGen.html">Finance Generator</a> <br>
+        <a class="green-link" href="../opportunities.html">Explore Opportunities </a> <br>
+    </div>
+
+    <div id="body">
+        <div class="grouping large blue-group">
+            <h3>My Account Settings</h3>
+            <div class="box"> Username: <div class="data" id="usernameData">XXXXXX</div>
+            </div>
+            <div class="box"> Password: <div class="data" id="passwordData">●●●●●●●●</div><i
+                    class="fa-solid fa-eye-slash" id="togglePass"></i></div>
+            <div class="box"> Email: <div class="data" id="emailData">XXXXXX@gmail.com</div>
+            </div>
+            <div class="button">Change Data</div>
+        </div>
+
+        <div class="grouping large green-group">
+            <h3>Goal Settings</h3>
+            <div class="box"> Start Year: <div class="data" id="startYearData">XXXX</div>
+            </div>
+            <div class="box"> End Year: <div class="data" id="endYearData">XXXX</div>
+            </div>
+            <div class="box"> Goal Amount: <div class="data" id="goalAmountData">$XXXXXX.XX</div>
+            </div>
+            <div class="button">Change Data</div>
+        </div>
+
+        <div class="grouping red-group">
+            <div class="flex">
+                <h3>Investment Preferences</h3>
+                <div class="box small"> Stocks: <br><input class="data" id="stocksData" type="range" min="0" max="10"
+                        step="1" readonly readonly="readonly"><br><i id="stocksFace"
+                        class="fa-regular fa-face-smile face"></i></div>
+                <div class="box small"> Bonds: <br><input readonly class="data" id="bondsData" type="range" min="0"
+                        max="10" step="1" readonly><br><i id="bondsFace" class="fa-regular fa-face-smile face"></i>
+                </div>
+                <div class="box small"> Real Estate: <br><input readonly class="data" id="landData" type="range" min="0"
+                        max="10" step="1" readonly><br><i id="landFace" class="fa-regular fa-face-smile face"></i></div>
+                <div class="box small"> Business: <br><input readonly class="data" id="storeData" type="range" min="0"
+                        max="10" step="1" readonly><br><i id="storeFace" class="fa-regular fa-face-smile face"></i>
+                </div>
+                <div class="box small"> Royalties: <br><input readonly class="data" id="booksData" type="range" min="0"
+                        max="10" step="1" readonly><br><i id="booksFace" class="fa-regular fa-face-smile face"></i>
+                </div>
+                <div class="box small"> Other: <br><input readonly class="data" id="otherData" type="range" min="0"
+                        max="10" step="1" readonly><br><i id="otherFace" class="fa-regular fa-face-smile face"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sidenote">
+        <h2 class="gradient">Need Help?</h2>
+        <a class="blue-link selected" href="../accountHTMLFiles/account.html" id="logout">Log Out</a> <br>
+    </div>
+    <script>
+        logout = document.getElementById("logout");
+
+
+        logout.addEventListener("click", logOff);
+
+        function logOff() {
+            localStorage.removeItem("feed");
+            localStorage.removeItem("userKey");
+            localStorage.removeItem("userGoal");
+        }
+    </script>
+</body>
+
+</html>

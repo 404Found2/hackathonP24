@@ -1,0 +1,112 @@
+* {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.data {
+    display: inline-block;
+}
+
+.box {
+    width: 80%;
+    border: 2px solid white;
+    margin: 5px auto;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-eye,
+.fa-eye-slash {
+    color: white;
+    margin-right: 10px;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.grouping.large {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.grouping h3 {
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.blue-group {
+    background: var(--blue);
+}
+
+.green-group {
+    background: var(--green);
+}
+
+.red-group {
+    background: var(--red);
+}
+
+.button {
+    background: white;
+    width: 120px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.blue-group .button {
+    color: var(--blue);
+}
+
+.green-group .button {
+    color: var(--green);
+}
+
+.face {
+    font-size: 24px;
+}
+
+.box.small {
+    width: 200px !important;
+    text-align: center;
+}
+
+.grouping .flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.box.small input {
+    margin: auto;
+}
+
+.box.small i {
+    margin: auto;
+}
+
+input {
+    pointer-events: none;
+}
+
+.grouping {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.flex .box.small {
+    display: block;
+}

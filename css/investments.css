@@ -1,0 +1,60 @@
+a {
+    text-decoration: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topic {
+    max-width: 100%;
+    width: 250px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+}
+
+.red-topic {
+    border-color: var(--red);
+    background-color: var(--red);
+}
+
+
+.red-topic:hover {
+    color: var(--red);
+    background: white;
+}
+
+.middle-topic {
+    border-color: var(--middle-color);
+    background-color: var(--middle-color);
+}
+
+.middle-topic:hover {
+    color: var(--middle-color);
+    background: white;
+}
+
+.blue-topic {
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+
+.blue-topic:hover {
+    color: var(--blue);
+    background: white;
+}
+
+.green-topic {
+    border-color: var(--green);
+    background-color: var(--green);
+}
+
+.green-topic:hover {
+    color: var(--green);
+    background: white;
+}

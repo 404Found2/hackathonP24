@@ -1,0 +1,201 @@
+.bubble {
+    width: 100%;
+    border: 2px solid var(--grey);
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sidenote .bubble {
+    width: 95%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    background: var(--blue);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+table tr {
+    height: 24px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    border: 1px solid;
+}
+
+td {
+    padding: 5px;
+}
+
+.event-form {
+    margin-bottom: 10px;
+    display: none;
+    background: white;
+    border: 2px solid var(--middle-color);
+    border-radius: 15px;
+}
+
+
+.event-form h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--middle-color);
+}
+
+
+.data .event-form input {
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: var(--middle-color);
+}
+
+
+.event-form button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 2px;
+    border-radius: 15px;
+    border: 1px solid var(--middle-color);
+    background-color: white;
+    color: var(--middle-color);
+}
+
+.event-form button:hover {
+    margin-top: 10px;
+    width: 100%;
+    padding: 2px;
+    background-color: var(--middle-color);
+    color: white;
+}
+
+.data button {
+    background-color: var(--blue);
+    border: 0px;
+    height: 30px;
+    min-width: 100px;
+    border-radius: 30px;
+    color: var(--color-light);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: var(--dark-blue);
+}
+
+#createChart {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fill {
+    width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 100%;
+    border: 0px;
+    font-size: 15px;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+/*SOURCES OF INCOME PAGE STYLES*/
+.tip {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tip p {
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 15px;
+    max-width: 1000px;
+}
+
+.tip h3 {
+    font-size: 24px;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    max-width: 1000px;
+}
+
+
+
+/*COLOR CODING*/
+.red table th {
+    background: var(--red);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.red button {
+    background-color: var(--red);
+    border: 0px;
+    height: 30px;
+    min-width: 100px;
+    border-radius: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.red button:hover {
+    background: var(--dark-red);
+}
+
+.green table th {
+    background: var(--green);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.green button {
+    background-color: var(--green);
+    border: 0px;
+    height: 30px;
+    min-width: 100px;
+    border-radius: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.green button:hover {
+    background: var(--dark-green);
+}
